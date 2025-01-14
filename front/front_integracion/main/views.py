@@ -20,7 +20,7 @@ def register_view(request):
             return JsonResponse({'error': 'Passwords do not match.'}, status=400)
 
 
-        backend_url = 'http://ip/register/'
+        backend_url = 'http://172.31.95.196:8000/register/'
         payload = {
             'username': username,
             'email': email,
